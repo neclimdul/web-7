@@ -10,8 +10,8 @@ RUN echo "--enable-intl" >> /opt/phpenv/plugins/php-build/share/php-build/defaul
     sudo chown -R root:root /opt/phpenv && \
     phpenv rehash && \
     phpenv global 7.0snapshot && \
-    ln -s /opt/phpenv/shims/php /usr/bin/php && \
-    rm -rf /tmp/pear /tmp/php-build*
+    ln -s /opt/phpenv/shims/php /usr/bin/php
+#    rm -rf /tmp/pear /tmp/php-build*
 
 # TODO: pecl mongo not working yet
 # RUN echo | pecl install mongo
